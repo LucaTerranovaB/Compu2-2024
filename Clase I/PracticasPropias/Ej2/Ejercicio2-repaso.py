@@ -32,4 +32,10 @@ if __name__ == "__main__":
     Ejercicio2().ObtenerArgumentos(Ejercicio2().cadena,Ejercicio2().numero)
     Ejercicio2().ImprimirCadena(Ejercicio2().cadena,Ejercicio2().numero)
 
+
+
+# python3 Ejercicio2-repaso.py "Hola" 5
+# HolaHolaHolaHolaHola
     
+# guardando el output como txt
+# python3 Ejercicio2-repaso.py "Hola" 5 > output.txt
