@@ -34,6 +34,9 @@ def main():
     #-9 -2 -USR1/2 -STOP
     #sig stop y sig kill no pueden modificarse!!
     
+    signal.signal(signal.SIGUSR1, signal.SIG_IGN)
+    signal.signal(signal.SIGUSR2, funcionUSR2)
+    
     print("Señal 2: "    + str(signal.getsignal(signal.SIGINT)))
     print("Señal USR1: " + str(signal.getsignal(signal.SIGUSR1)))
     print("Señal USR2: " + str(signal.getsignal(signal.SIGUSR2)))
